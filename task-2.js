@@ -11,19 +11,11 @@ const toggleUserState = (allUsers, userName) => {
   );
 
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(updatedUsers);
-    }, 3000);
+    resolve(updatedUsers);
   });
 };
 
 const logger = (updatedUsers) => console.table(updatedUsers);
-
-/*
- * Сейчас работает так
- */
-//toggleUserState(users, "Mango", logger);
-//toggleUserState(users, "Lux", logger);
 
 /*
  * Должно работать так
